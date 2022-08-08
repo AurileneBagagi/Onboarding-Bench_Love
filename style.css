@@ -15,22 +15,58 @@ html{
 
 body{
   background-color: #695CA4;
+  /*overflow-y: hidden; /*retirar scrom*/
 }
 
 header{
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+  justify-content: center;
   align-items: center;
+  min-height: 15.9rem;
 }
 
 header>h1{
   font-family: 'Righteous';
   font-style: normal;
   font-size: 2.4rem;
-  color:  #FFFFFF;
+  color:  #FFF;
 }
 
-.div-button{
+.botoes{
+  display: flex;
+  gap: 1.2rem;
+}
 
+.botoes button{
+  padding: 0.8rem 2.4rem;
+  border: none;
+  border-radius: 0.4rem;
+  background: none;
+  color: #FFF;
+  font-family: 'Righteous';
+  font-size: 1.4rem;
+}
+
+.botoes .ativo{
+  background-color: rgba(255, 255, 255, 0.56);
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  background: #FFF;
+  padding: 2.4rem 3.2rem;
+  gap: 2.4rem;
+  border-top-left-radius: 2.4rem; /*alterar o superior esquerdo*/
+  border-top-right-radius: 2.4rem; /*alterar o superior direito*/
+  position: relative;
+  top: -2.4rem;
+  min-height: calc(100vh-15.9rem); /*vh: tela atual do usuario (view height)*/
+
+}
+
+.lista-mensagens{
+  
 }
