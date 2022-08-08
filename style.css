@@ -1,22 +1,38 @@
 /*o indicado do front-size do html é 62.5%*/
-#div-com-texto {
-    width: 500px;
-    height: 200px;
-    font-size: 20px;
-}
-.minha-classe {
-    background-color: deepskyblue;
-    width: 100px;
-    height: 100px;
-}
-.meu-p{
-    font-size: 3rem;
+/*padding: é o preenchimento da div*/
+/*preenchimento é nada mais do posicionamento entre pai e filho*/
+*{ /*manter as dimeções*/
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-p{
-    color: rebeccapurple;
+div {
+  width: 500px;
+  height: 500px;
+  background-color: rgb(7, 235, 243);
+  /*padding: 20px;
+  /*border: 5px solid rgb(68, 68, 248);
+  /*margin-left: 50px; /*margem-esquerda*/
 }
 
-html{
-    font-size: 62.5%;
+.pai{
+  display:flex;
+  flex-direction: row; /*row*/
+  justify-content: space-between  ;
+  align-items: flex-start;
+  /*gap: 10px;*/
+}
+
+.div-filho{
+  width: 45%;
+  height: 45%;
+  background-color: rgb(4, 134, 255);
+  border: none;
+  /*display: inline-block; /*mal vamos usar*/
+}
+
+.div2{
+  margin-top: 50px;
+
 }
