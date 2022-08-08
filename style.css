@@ -1,0 +1,22 @@
+/*o indicado do front-size do html é 62.5%*/
+#div-com-texto {
+    width: 500px;
+    height: 200px;
+    font-size: 20px;
+}
+.minha-classe {
+    background-color: deepskyblue;
+    width: 100px;
+    height: 100px;
+}
+.meu-p{
+    font-size: 3rem;
+}
+
+p{
+    color: rebeccapurple;
+}
+
+html{
+    font-size: 62.5%;
+}
