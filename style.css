@@ -1,38 +1,36 @@
 /*o indicado do front-size do html é 62.5%*/
 /*padding: é o preenchimento da div*/
 /*preenchimento é nada mais do posicionamento entre pai e filho*/
-*{ /*manter as dimeções*/
+/*header > h1: para o mais proximo*/
+/**{ /*manter as dimeções
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+} 
+*/
+
+html{
+  font-size: 62.5%;
 }
 
-div {
-  width: 500px;
-  height: 500px;
-  background-color: rgb(7, 235, 243);
-  /*padding: 20px;
-  /*border: 5px solid rgb(68, 68, 248);
-  /*margin-left: 50px; /*margem-esquerda*/
+body{
+  background-color: #695CA4;
 }
 
-.pai{
-  display:flex;
-  flex-direction: row; /*row*/
-  justify-content: space-between  ;
-  align-items: flex-start;
-  /*gap: 10px;*/
+header{
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  align-items: center;
 }
 
-.div-filho{
-  width: 45%;
-  height: 45%;
-  background-color: rgb(4, 134, 255);
-  border: none;
-  /*display: inline-block; /*mal vamos usar*/
+header>h1{
+  font-family: 'Righteous';
+  font-style: normal;
+  font-size: 2.4rem;
+  color:  #FFFFFF;
 }
 
-.div2{
-  margin-top: 50px;
+.div-button{
 
 }
