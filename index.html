@@ -25,8 +25,8 @@
     <header>
         <h1>Bench Love</h1>
         <div class="botoes">
-            <button class="ativo">Chats</button>
-            <button>Status</button>
+            <button class="ativo" onclick="somar(10,20); //aplicando js//">Chats</button>
+            <button >Status</button>
             <button>Ligações</button>
         </div>
     </header>
@@ -67,6 +67,7 @@
                     <p>2:45</p>
                 </div>
             </div>
+            <ul id="lista"></ul>
         </div>
         <button>
             <svg width="22" 
@@ -81,4 +82,101 @@
         </button>
     </main>
 </body>
+<script> //Declarando o JavaScript//
+    // console.log('olá mundo') //semelhante ao print do python//
+    var g = true //Variavel global//
+    const string = 'olá gooogle' //não muda os valores//
+    let v = 12354 //os valores podem ser modificados//
+
+    // Funções //
+    // function somar(a,b) { //forma primitiva
+    //     let soma = a+b;
+    //     console.log(soma);
+    // }; 
+    // função anonima
+    // const somar = (a,b) => {
+    //     let soma = a+b;
+    //     console.log(soma);
+    // }
+    //somar(2,5)
+
+    //const arr = ['aurilene', 'Gabriele', 'victão', 'Mateus'] //array/lista
+    // arr.push('adicionar valor')
+    // arr.unshift('adicionar valor na frente');
+    // console.log(arr.pop()); retirar o ultimo valor e também printar qual foi
+    // console.log(arr.shift()); retirar o primeiro valor e também printar qual foi
+    // Estudar o que o map
+    // console.log(arr.indexOf('Gabriele')); determinar um index
+    // console.log(arr.length); tamanho do array
+    // console.log(arr.splice(1, 2)); fracionar o array obs.: o primeiro é a posição o segundo é ate quantas posições depois (lembre que o depois está inserido o elemento de inicio)
+
+    //string
+    // const stri = 'e aí'
+    // console.log(stri.toLocaleUpperCase()) retorna tudo maiusculo
+    // console.log(stri.toLocaleLowerCase()) retorna tudo minusculo
+    // console.log(stri.length) retorna quantos caracteres
+    // const f = (inteiro, boleano) =>{
+    //     // if (inteiro < parseInt(boleano)){ //parseInt verifica se é um inteiro
+    //     //     console.log("deu certo");
+    //     // } else {
+    //     //     console.log("deu errado");
+    //     // } extenso
+    //     // inteiro < parseInt(boleano) ? console.log("deu certo"): console.log("deu errado"); // if ternario
+    //     // Number.isNaN(boleano) ? console.log("deu certo"): console.log("deu errado"); descobri se é um valor numerico (se colocar o ! antes da função ele irá inverter o valor )
+    // }
+    // f(5,'ba6')
+
+    // Estrutura de repetições
+    // for (let i =0; i < arr.length; i++) {
+    //     console.log(i); //1. contador, 2. condição, 3. autoincremento 
+    // }
+    // =: atribuindo o valor
+    // ==: comparando o valor
+    // ===: comparando o valor e o tipo
+    // let i = 1;
+    // do {
+    //     arr.push(i)
+    //     console.log(i)
+    //     i++
+    // } while (arr.length < 8);
+
+    // manipular o html dentro do js
+        // var dom = document.getElementById('lista');
+        // console.log(dom)
+        // // dom.innerHTML = 'alterando com o JS'
+
+        // const arr = [{ //objeto 
+        //     nome: 'Aurilene',
+        //     lastMessage: 'É cada uma que me apar'
+        //     },
+        //     {
+        //     nome: 'Diniz',
+        //     lastMessage: 'É cada uma que me apar'
+        //     },
+        //     {
+        //     nome: 'Carneiro',
+        //     lastMessage: ':('
+        //     },
+        //     {
+        //     nome: 'Gabriele',
+        //     lastMessage: 'XD'
+        //     }
+        // ]
+        // console.log(arr)
+
+        // arr.map((e) => {
+        //     var li = document.createElement('li');
+        //     li.style.fontSize= '2rem'
+        //     li.innerHTML = e.nome + ': ' + e.lastMessage ;
+        //     dom.appendChild(li);
+        // })
+
+    //objeto
+    const obj = {
+        nome: 'Aurilene',
+        altura: 1.58,
+        idade: 17,
+    }
+    console.log(obj.nome);
+</script>
 </html> 
